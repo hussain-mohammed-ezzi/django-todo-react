@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Modal from "./components/Modal";
 import axios from "axios";
+import { Route } from "react-router-dom";
+import List from './pages/List';
 
 class App extends Component {
   constructor(props) {
@@ -159,5 +161,12 @@ class App extends Component {
     );
   }
 }
+// function App() {
+//   return (
+//     <div>
+//       <Route path="/list" component={List} />
+//     </div>
+//   );
+// }
 
 export default App;
